@@ -1,0 +1,23 @@
+#countLbl{
+display: block ;
+text-align: center;
+font-size: 10em;
+font-family: 'Courier New', Courier, monospace;
+}
+#btncontainer{
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.buttons:hover{
+    background-color: darkblue;
+}
