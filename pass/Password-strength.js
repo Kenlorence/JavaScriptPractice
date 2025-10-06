@@ -4,6 +4,7 @@ function CheckStrength(){
     const UpperCase = /[A-Z]/;
     const lowerCase = /[a-z]/;
     const password = document.getElementById('pass').value;
+    const Status = document.getElementById('#status');
 
     
     if (password.length >= 12){
@@ -27,13 +28,16 @@ function CheckStrength(){
 
 
 if (strong >= 3){
-    console.log("Strong");
+    Status.textContent = "Strong";
+    Status.style.color = "green";
     
 }else if(strong ==2){
-    console.log("mid");
+    Status.textContent = "Mid";
+    Status.style.color = "yellow";
     
 }else{
-    console.log("Weak");
+   Status.textContent = "Weak";
+    Status.style.color = "red";
     
 }
 
